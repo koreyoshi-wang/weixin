@@ -42,9 +42,9 @@ public class TimeStartServlet extends HttpServlet
         // 第三方用户唯一凭证密钥  
         String appSecret = "7b9cb57cb9d3d9cc9f5066b8f293cb37";
     	//AccessToken at = WeixinUtil.getAccessToken(appId, appSecret);
-        AccessToken at = new AccessToken();
-        at.setToken("ertwertwert");
-    	service.save(at);
+        //AccessToken at = new AccessToken();
+        //at.setToken("ertwertwert");
+    	//service.save(at);
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {
 			@Override
@@ -55,8 +55,8 @@ public class TimeStartServlet extends HttpServlet
 				System.out.println("需要执行的任务");
 			}
 		};
-        //timer.schedule(task, 60*60*1000);
-		timer.schedule(task,5000 ,6*1000);
+        timer.schedule(task, 60*60*1000);
+        //timer.schedule(task,5000 ,60*1000);
     }
     
     protected void doGet(HttpServletRequest request,

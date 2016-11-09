@@ -13,14 +13,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.wang.entity.UserEntity;
-import com.wang.service.IUserService;
+import com.wang.service.UserService;
 
 /**
  * @author wang
  */
 @Transactional
 @Service("userService")
-public class UserServiceImpl extends BaseServiceImpl implements IUserService {
+public class UserServiceImpl extends BaseServiceImpl implements UserService {
 	
 
 	@Override

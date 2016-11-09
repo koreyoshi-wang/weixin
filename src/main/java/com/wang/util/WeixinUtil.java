@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.Writer;
 import java.math.BigInteger;
 import java.security.MessageDigest;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,11 +26,15 @@ import java.net.URL;
 
 
 
+
+
 import javax.net.ssl.HttpsURLConnection;  
 import javax.net.ssl.SSLContext;  
 import javax.net.ssl.SSLSocketFactory;  
 import javax.net.ssl.TrustManager;  
   
+
+
 
 
 
@@ -57,6 +62,7 @@ import com.wang.entity.Button;
 import com.wang.entity.CommonButton;
 import com.wang.entity.ComplexButton;
 import com.wang.entity.Menu;
+import com.wang.entity.Message;
 import com.wang.entity.Reply;
 /**
  * @author wanfangg
@@ -349,6 +355,39 @@ public class WeixinUtil {
 		return map;
 	}
 
+	/**
+	 * 存储数据的Map转换为对应的Message对象
+	 * @param map 存储数据的map
+	 * @return 返回对应Message对象
+	 */
+	public static  Message  mapToMessage(Map<String,String> map){
+		if(map == null) return null;
+		String msgType = map.get("MsgType");
+		Message message = new Message();
+		message.setToUserName(map.get("ToUserName"));
+		message.setFromUserName(map.get("FromUserName"));
+		message.setCreateTime(new Date(Long.parseLong(map.get("CreateTime"))));
+		message.setMsgType(msgType);
+		message.setMsgId(map.get("MsgId"));
+		if(msgType.equals(Message.TEXT)){
+			message.setContent(map.get("Content"));
+		}else if(msgType.equals(Message.IMAGE)){
+			message.setPicUrl(map.get("PicUrl"));
+		}else if(msgType.equals(Message.LINK)){
+			message.setTitle(map.get("Title"));
+			message.setDescription(map.get("Description"));
+			message.setUrl(map.get("Url"));
+		}else if(msgType.equals(Message.LOCATION)){
+			message.setLocationX(map.get("Location_X"));
+			message.setLocationY(map.get("Location_Y"));
+			message.setScale(map.get("Scale"));
+			message.setLabel(map.get("Label"));
+		}else if(msgType.equals(Message.EVENT)){
+			message.setEvent(map.get("Event"));
+			message.setEventKey(map.get("EventKey"));
+		}
+		return message;
+	}
 	
 	/**
 	 * sha1加密算法

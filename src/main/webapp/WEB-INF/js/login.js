@@ -13,7 +13,7 @@ $(function() {
 			dataType : "json",
 			data : user,
 			contentType : "application/x-www-form-urlencoded;charset=UTF-8",
-			url : "user/login",
+			url : "login/login",
 			// 同步async: false,（默认是true）;
 			// 如上：false为同步，这个方法中的Ajax请求将整个浏览器锁死，
 			// 只有test.jsp执行结束后，才可以执行其它操作。
@@ -23,7 +23,10 @@ $(function() {
 					alert("用户名或者密码错误，请重新登录！");
 				} else if (true == data.loginResult) {
 					alert("登录成功！");
-					var indexUrl = window.location.protocol+"//"+window.location.host+window.location.pathname+"html/index.html";
+					var indexUrl = window.location.protocol+"//"+ window.location.host + "/weixin/index";
+					if (data.URL != null && data.URL != "/weixin"){
+						indexUrl = data.URL;
+					}
 					window.location = indexUrl;
 				}
 			},

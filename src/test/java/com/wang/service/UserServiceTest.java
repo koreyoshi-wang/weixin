@@ -11,13 +11,13 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.wang.entity.UserEntity;
-import com.wang.service.IUserService;
+import com.wang.service.UserService;
 
 @ContextConfiguration(locations= {"classpath:applicationContext.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
 public class UserServiceTest {
 	@Resource
-	private IUserService userService;
+	private UserService userService;
 	@Test
 	public void testIsExist(){
 		UserEntity user = new UserEntity();

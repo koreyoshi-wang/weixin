@@ -8,7 +8,7 @@ import com.wang.entity.UserEntity;
 /**
  * @author wang
  */
-public interface IUserService extends BaseService {
+public interface UserService extends BaseService {
 	public boolean isExist(UserEntity user);
 
 	/**
