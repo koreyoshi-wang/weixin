@@ -1,0 +1,775 @@
+[INFO][2016-11-08 16:14:53,218][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-08 16:14:53,767][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Tue Nov 08 16:14:53 CST 2016]; root of context hierarchy
+[INFO][2016-11-08 16:14:53,979][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-08 16:14:54,048][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-08 16:14:54,477][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-08 16:14:54,627][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-08 16:14:54,928][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-08 16:14:54,939][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-08 16:14:54,942][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-08 16:14:54,944][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-08 16:14:55,663][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-08 16:14:55,914][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-08 16:14:55,922][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-08 16:14:55,977][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-08 16:14:56,453][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-08 16:14:56,453][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-08 16:14:56,459][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-08 16:14:56,552][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-08 16:14:56,554][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-08 16:14:56,554][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-08 16:14:56,554][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-08 16:14:56,594][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-08 16:14:56,595][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-08 16:14:56,595][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-08 16:14:56,595][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-08 16:14:56,597][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-08 16:14:57,312][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Tue Nov 08 16:14:53 CST 2016]; root of context hierarchy
+[INFO][2016-11-08 16:14:57,314][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-08 16:14:57,344][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 13:40:48,086][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 13:40:48,696][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:40:48 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:40:48,897][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 13:40:48,976][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 13:40:49,458][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 13:40:49,613][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 13:40:49,917][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 13:40:49,926][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 13:40:49,930][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 13:40:49,932][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 13:40:50,666][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 13:40:50,938][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 13:40:50,946][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 13:40:50,999][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 13:40:51,557][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 13:40:51,558][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 13:40:51,564][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 13:40:51,651][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 13:40:51,652][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 13:40:51,652][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:40:51,652][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:40:51,708][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 13:40:51,709][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 13:40:51,709][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 13:40:51,709][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 13:40:51,765][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 13:40:51,766][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 13:40:51,766][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:40:51,766][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:40:51,815][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 13:40:51,816][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 13:40:51,816][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:40:51,816][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:40:51,867][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 13:40:51,867][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 13:40:51,868][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:40:51,868][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:40:51,870][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 13:40:52,386][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:40:48 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:40:52,387][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 13:40:52,401][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 13:43:23,222][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 13:43:23,693][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:43:23 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:43:23,900][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 13:43:23,972][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 13:43:24,399][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 13:43:24,551][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 13:43:24,854][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 13:43:24,865][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 13:43:24,869][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 13:43:24,872][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 13:43:25,690][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 13:43:26,152][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 13:43:26,165][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 13:43:26,250][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 13:43:26,881][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 13:43:26,881][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 13:43:26,890][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 13:43:26,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 13:43:26,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 13:43:26,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:43:26,985][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:43:27,052][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 13:43:27,053][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 13:43:27,053][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 13:43:27,053][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 13:43:27,128][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 13:43:27,128][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 13:43:27,128][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:43:27,128][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:43:27,195][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 13:43:27,195][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 13:43:27,195][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:43:27,196][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:43:27,243][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 13:43:27,243][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 13:43:27,244][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:43:27,244][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:43:27,246][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 13:43:27,979][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:43:23 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:43:27,981][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 13:43:27,993][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 13:51:55,379][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 13:51:55,836][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:51:55 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:51:56,037][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 13:51:56,100][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 13:51:56,555][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 13:51:56,704][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 13:51:57,022][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 13:51:57,031][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 13:51:57,034][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 13:51:57,036][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 13:51:57,703][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 13:51:57,979][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 13:51:57,986][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 13:51:58,041][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 13:51:58,522][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 13:51:58,522][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 13:51:58,528][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 13:51:58,592][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 13:51:58,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 13:51:58,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:51:58,594][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:51:58,636][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 13:51:58,636][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 13:51:58,637][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 13:51:58,637][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 13:51:58,686][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 13:51:58,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 13:51:58,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:51:58,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:51:58,727][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 13:51:58,728][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 13:51:58,728][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:51:58,728][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:51:58,781][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 13:51:58,782][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 13:51:58,782][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:51:58,783][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:51:58,784][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 13:51:59,680][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:51:55 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:51:59,683][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 13:51:59,700][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 13:55:48,084][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 13:55:48,558][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:55:48 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:55:48,764][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 13:55:48,841][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 13:55:49,292][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 13:55:49,441][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 13:55:49,792][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 13:55:49,802][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 13:55:49,806][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 13:55:49,808][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 13:55:50,480][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 13:55:50,774][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 13:55:50,783][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 13:55:50,835][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 13:55:51,405][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 13:55:51,406][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 13:55:51,414][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 13:55:51,524][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 13:55:51,524][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 13:55:51,525][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:55:51,525][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:55:51,594][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 13:55:51,594][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 13:55:51,595][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 13:55:51,595][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 13:55:51,657][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 13:55:51,658][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 13:55:51,658][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:55:51,658][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:55:51,726][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 13:55:51,727][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 13:55:51,727][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:55:51,727][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:55:51,791][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 13:55:51,791][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 13:55:51,792][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:55:51,792][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:55:51,794][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 13:55:52,486][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:55:48 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:55:52,489][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 13:55:52,523][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 13:57:16,422][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 13:57:16,931][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:57:16 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:57:17,145][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 13:57:17,209][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 13:57:17,680][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 13:57:17,824][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 13:57:18,156][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 13:57:18,165][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 13:57:18,168][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 13:57:18,170][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 13:57:18,846][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 13:57:19,118][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 13:57:19,125][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 13:57:19,183][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 13:57:19,744][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 13:57:19,744][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 13:57:19,750][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 13:57:19,892][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 13:57:19,893][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 13:57:19,893][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:57:19,893][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:57:19,947][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 13:57:19,948][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 13:57:19,948][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 13:57:19,948][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 13:57:20,002][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 13:57:20,003][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 13:57:20,003][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:57:20,003][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:57:20,056][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 13:57:20,057][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 13:57:20,057][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:57:20,057][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:57:20,104][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 13:57:20,104][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 13:57:20,105][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 13:57:20,105][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 13:57:20,107][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 13:57:20,781][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 13:57:16 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 13:57:20,782][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 13:57:20,822][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 14:00:11,888][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 14:00:12,344][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 14:00:12 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 14:00:12,544][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 14:00:12,616][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 14:00:13,064][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 14:00:13,219][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 14:00:13,534][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 14:00:13,543][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 14:00:13,548][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 14:00:13,551][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 14:00:14,273][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 14:00:14,551][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 14:00:14,557][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 14:00:14,609][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 14:00:15,114][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 14:00:15,114][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 14:00:15,120][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 14:00:15,218][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 14:00:15,218][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 14:00:15,218][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 14:00:15,219][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 14:00:15,267][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 14:00:15,267][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 14:00:15,268][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 14:00:15,268][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 14:00:15,328][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 14:00:15,329][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 14:00:15,329][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 14:00:15,329][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 14:00:15,380][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 14:00:15,381][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 14:00:15,381][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 14:00:15,381][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 14:00:15,431][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 14:00:15,431][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 14:00:15,431][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 14:00:15,432][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 14:00:15,433][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 14:00:16,180][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 14:00:12 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 14:00:16,189][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 14:00:16,202][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 15:05:58,241][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:05:58,741][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:05:58 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:05:58,959][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:05:59,029][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:05:59,476][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:05:59,626][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:05:59,983][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:05:59,991][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:05:59,994][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:05:59,998][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:06:00,702][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:06:00,974][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 15:06:00,983][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 15:06:01,039][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 15:06:01,600][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 15:06:01,601][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 15:06:01,609][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 15:06:01,685][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 15:06:01,685][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 15:06:01,686][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:06:01,686][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:06:01,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 15:06:01,735][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 15:06:01,735][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 15:06:01,735][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 15:06:01,852][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 15:06:01,853][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 15:06:01,853][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:06:01,853][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:06:01,907][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 15:06:01,908][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 15:06:01,908][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:06:01,908][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:06:01,952][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 15:06:01,952][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 15:06:01,952][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:06:01,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:06:01,955][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 15:06:02,871][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:05:58 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:06:02,874][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:06:02,891][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 15:12:32,828][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:12:33,342][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:12:33 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:12:33,617][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:12:33,697][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:12:34,124][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:12:34,269][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:12:34,583][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:12:34,594][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:12:34,596][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:12:34,600][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:12:35,260][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:12:35,527][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 15:12:35,534][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 15:12:35,586][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 15:12:36,132][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 15:12:36,132][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 15:12:36,138][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 15:12:36,213][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 15:12:36,213][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 15:12:36,214][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:12:36,214][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:12:36,267][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 15:12:36,268][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 15:12:36,268][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 15:12:36,268][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 15:12:36,325][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 15:12:36,325][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 15:12:36,325][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:12:36,326][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:12:36,373][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 15:12:36,374][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 15:12:36,374][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:12:36,376][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:12:36,423][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 15:12:36,423][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 15:12:36,423][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:12:36,423][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:12:36,425][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 15:12:37,219][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:12:33 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:12:37,221][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:12:37,233][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 15:15:06,526][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:15:07,002][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:15:06 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:15:07,216][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:15:07,291][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:15:07,773][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:15:07,930][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:15:08,242][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:15:08,252][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:15:08,255][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:15:08,257][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:15:08,971][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:15:09,257][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 15:15:09,264][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 15:15:09,316][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 15:15:09,861][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 15:15:09,861][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 15:15:09,868][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 15:15:09,936][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 15:15:09,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 15:15:09,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:15:09,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:15:09,988][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 15:15:09,988][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 15:15:09,988][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 15:15:09,989][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 15:15:10,042][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 15:15:10,042][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 15:15:10,042][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:15:10,042][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:15:10,096][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 15:15:10,096][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 15:15:10,098][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:15:10,098][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:15:10,149][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 15:15:10,149][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 15:15:10,150][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:15:10,150][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:15:10,152][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 15:15:10,964][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:15:06 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:15:10,966][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:15:10,980][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 15:17:37,264][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:17:37,746][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:17:37 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:17:37,954][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:17:38,021][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:17:38,481][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:17:38,627][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:17:38,954][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:17:38,965][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:17:38,968][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:17:38,971][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:17:39,643][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:17:39,914][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 15:17:39,921][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 15:17:39,972][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 15:17:40,784][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 15:17:40,785][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 15:17:40,803][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 15:17:40,967][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 15:17:40,968][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 15:17:40,968][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:17:40,968][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:17:41,028][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 15:17:41,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 15:17:41,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 15:17:41,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 15:17:41,132][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 15:17:41,132][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 15:17:41,133][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:17:41,133][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:17:41,182][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 15:17:41,182][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 15:17:41,185][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:17:41,187][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:17:41,229][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 15:17:41,229][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 15:17:41,230][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:17:41,230][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:17:41,232][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 15:17:42,092][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:17:37 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:17:42,094][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:17:42,107][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 15:30:49,317][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:30:49,803][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:30:49 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:30:50,019][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:30:50,089][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:30:50,545][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:30:50,703][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:30:51,005][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:30:51,013][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:30:51,016][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:30:51,017][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:30:51,658][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:30:51,946][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 15:30:51,954][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 15:30:52,010][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 15:30:52,565][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 15:30:52,565][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 15:30:52,571][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 15:30:52,655][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 15:30:52,655][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 15:30:52,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:30:52,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:30:52,702][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 15:30:52,703][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 15:30:52,703][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 15:30:52,703][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 15:30:52,761][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 15:30:52,761][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 15:30:52,761][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:30:52,762][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:30:52,828][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 15:30:52,829][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 15:30:52,829][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:30:52,829][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:30:52,876][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 15:30:52,877][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 15:30:52,877][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:30:52,877][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:30:52,880][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 15:30:53,798][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:30:49 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:30:53,799][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:30:53,810][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 15:32:42,689][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:32:43,150][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:32:43 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:32:43,348][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:32:43,425][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:32:43,903][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:32:44,059][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:32:44,393][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:32:44,404][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:32:44,407][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:32:44,409][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:32:45,076][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:32:45,343][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 15:32:45,351][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 15:32:45,403][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 15:32:45,951][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 15:32:45,952][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 15:32:45,959][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 15:32:46,043][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 15:32:46,044][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 15:32:46,044][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:32:46,044][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:32:46,117][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 15:32:46,118][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 15:32:46,118][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 15:32:46,118][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 15:32:46,179][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 15:32:46,179][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 15:32:46,179][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:32:46,180][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:32:46,235][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 15:32:46,236][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 15:32:46,236][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:32:46,236][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:32:46,285][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 15:32:46,286][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 15:32:46,286][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:32:46,286][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:32:46,288][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 15:32:47,181][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:32:43 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:32:47,183][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:32:47,193][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 15:33:42,318][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:33:42,817][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:33:42 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:33:43,031][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:33:43,113][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:33:43,559][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:33:43,722][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:33:44,070][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:33:44,080][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:33:44,083][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:33:44,087][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:33:44,798][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:33:45,092][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 15:33:45,098][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 15:33:45,161][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 15:33:45,736][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 15:33:45,736][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 15:33:45,741][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 15:33:45,852][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 15:33:45,853][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 15:33:45,853][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:33:45,853][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:33:45,918][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 15:33:45,919][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 15:33:45,920][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 15:33:45,920][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 15:33:46,024][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 15:33:46,025][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 15:33:46,025][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:33:46,025][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:33:46,082][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 15:33:46,082][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 15:33:46,083][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:33:46,083][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:33:46,150][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 15:33:46,150][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 15:33:46,150][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:33:46,151][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:33:46,153][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 15:33:47,078][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:33:42 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:33:47,079][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:33:47,094][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 15:41:19,107][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:41:19,763][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:41:19 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:41:20,046][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:41:20,140][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:41:20,606][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:41:20,765][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:41:21,136][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:41:21,145][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:41:21,150][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:41:21,153][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:41:21,895][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:41:22,159][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:41:22,176][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[ERROR][2016-11-09 15:41:22,177][org.springframework.test.context.TestContextManager]Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@32193bea] to prepare test instance [com.wang.service.UserServiceTest@6b8d96d9]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: reply, for columns: [org.hibernate.mapping.Column(articles)]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Could not determine type for: java.util.List, at table: reply, for columns: [org.hibernate.mapping.Column(articles)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:416)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:150)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:303)
+	... 41 more
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: reply, for columns: [org.hibernate.mapping.Column(articles)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:314)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:292)
+	at org.hibernate.mapping.Property.isValid(Property.java:239)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:483)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:270)
+	at org.hibernate.cfg.Configuration.validate(Configuration.java:1324)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1782)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1861)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:247)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:373)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	... 53 more
+[INFO][2016-11-09 15:44:19,637][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:44:20,228][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:44:20 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:44:20,513][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:44:20,627][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:44:21,253][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:44:21,444][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:44:21,958][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:44:21,972][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:44:21,978][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:44:21,981][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:44:22,830][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:44:23,108][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 15:44:23,117][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 15:44:23,178][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 15:44:23,718][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 15:44:23,718][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 15:44:23,725][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 15:44:23,793][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 15:44:23,793][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 15:44:23,793][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:44:23,794][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:44:23,861][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 15:44:23,862][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 15:44:23,862][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 15:44:23,862][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 15:44:23,917][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 15:44:23,917][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 15:44:23,917][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:44:23,918][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:44:23,967][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 15:44:23,967][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 15:44:23,968][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:44:23,968][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:44:24,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 15:44:24,016][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 15:44:24,016][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:44:24,016][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:44:24,206][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 15:44:25,103][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:44:20 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:44:25,104][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:44:25,119][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 15:46:25,342][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 15:46:25,839][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:46:25 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:46:26,050][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 15:46:26,137][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 15:46:26,581][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 15:46:26,735][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 15:46:27,047][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 15:46:27,058][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 15:46:27,063][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 15:46:27,066][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 15:46:27,738][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 15:46:27,973][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 15:46:27,980][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 15:46:28,032][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 15:46:28,532][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 15:46:28,532][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 15:46:28,538][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 15:46:28,614][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.accesstoken
+[INFO][2016-11-09 15:46:28,614][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 15:46:28,614][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:46:28,614][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:46:28,660][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.article
+[INFO][2016-11-09 15:46:28,660][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [picurl, sescription, updatedate, replyid, createdate, description, id, title, url]
+[INFO][2016-11-09 15:46:28,661][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_guvkk0n77fvo6wcvop5wt6xdd]
+[INFO][2016-11-09 15:46:28,661][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_guvkk0n77fvo6wcvop5wt6xdd, primary]
+[INFO][2016-11-09 15:46:28,711][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.message
+[INFO][2016-11-09 15:46:28,711][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 15:46:28,712][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:46:28,712][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:46:28,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.reply
+[INFO][2016-11-09 15:46:28,755][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 15:46:28,756][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:46:28,756][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:46:28,799][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: weixin.user
+[INFO][2016-11-09 15:46:28,799][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 15:46:28,800][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 15:46:28,800][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 15:46:28,801][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 15:46:29,667][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1a407d53: startup date [Wed Nov 09 15:46:25 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 15:46:29,669][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e25a92e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 15:46:29,695][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2016-11-09 21:09:44,143][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2016-11-09 21:09:44,624][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@482f8f11: startup date [Wed Nov 09 21:09:44 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 21:09:44,848][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2016-11-09 21:09:44,923][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8e0379d: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2016-11-09 21:09:45,411][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2016-11-09 21:09:45,563][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2016-11-09 21:09:45,979][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2016-11-09 21:09:45,991][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2016-11-09 21:09:45,996][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2016-11-09 21:09:45,999][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2016-11-09 21:10:00,952][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2016-11-09 21:10:01,228][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2016-11-09 21:10:01,236][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2016-11-09 21:10:01,293][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2016-11-09 21:10:01,887][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2016-11-09 21:10:01,887][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2016-11-09 21:10:01,895][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2016-11-09 21:10:03,669][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mydb.accesstoken
+[INFO][2016-11-09 21:10:03,669][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [expiresin, updatedate, createdate, id, token]
+[INFO][2016-11-09 21:10:03,674][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 21:10:03,674][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 21:10:05,388][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mydb.article
+[INFO][2016-11-09 21:10:05,389][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [sescription, picurl, updatedate, replyid, createdate, id, title, url]
+[INFO][2016-11-09 21:10:05,389][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 21:10:05,389][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 21:10:07,115][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mydb.message
+[INFO][2016-11-09 21:10:07,116][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [locationy, createtime, fromusername, locationx, createdate, description, msgid, scale, label, title, tousername, content, url, picurl, updatedate, eventkey, id, event, msgtype]
+[INFO][2016-11-09 21:10:07,117][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 21:10:07,117][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 21:10:08,842][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mydb.reply
+[INFO][2016-11-09 21:10:08,842][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [createtime, updatedate, fromusername, hqmusicurl, musicurl, createdate, id, msgtype, tousername, content, articlecount]
+[INFO][2016-11-09 21:10:08,842][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 21:10:08,843][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 21:10:10,567][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: mydb.user
+[INFO][2016-11-09 21:10:10,568][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [password, updatedate, sex, createdate, id, username]
+[INFO][2016-11-09 21:10:10,568][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2016-11-09 21:10:10,569][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2016-11-09 21:10:10,571][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2016-11-09 21:10:15,022][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@482f8f11: startup date [Wed Nov 09 21:09:44 CST 2016]; root of context hierarchy
+[INFO][2016-11-09 21:10:15,024][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8e0379d: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseService,userService,weixinService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2016-11-09 21:10:15,039][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed

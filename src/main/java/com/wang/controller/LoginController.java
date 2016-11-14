@@ -20,7 +20,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.wang.entity.UserEntity;
+import com.wang.entity.WeixinOauth2Token;
 import com.wang.service.UserService;
+import com.wang.util.WeixinUtil;
 
 /**
  * @author wang
@@ -37,6 +39,28 @@ public class LoginController{
         ModelAndView modelAndView = new ModelAndView("login");
         //modelAndView.setViewName("login");
         map.put("test", "index");
+     // 用户同意授权后，能获取到code
+        String code = request.getParameter("code");
+        String state = request.getParameter("state");
+        System.out.println("code:"+code);
+        // 用户同意授权
+        if (code != null && !"authdeny".equals(code)) {
+            // 获取网页授权access_token
+            WeixinOauth2Token weixinOauth2Token = WeixinUtil.getOauth2AccessToken("wx4240e73ac7d153c7", "83264065ef3fd932b81e7fcd24991cdb", code);
+            // 网页授权接口访问凭证
+            String accessToken = weixinOauth2Token.getAccessToken();
+            // 用户标识
+            String openId = weixinOauth2Token.getOpenId();
+
+            // 设置要传递的参数
+            map.put("state", state);
+            map.put("accessToken", accessToken);
+            map.put("openId", openId);
+            System.out.println("openId:"+openId);
+            request.getSession().setAttribute("state", state);
+            request.getSession().setAttribute("accessToken", accessToken);
+            request.getSession().setAttribute("openId", openId);
+        }
         modelAndView.addAllObjects(map);
 		return modelAndView;
 	}

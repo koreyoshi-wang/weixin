@@ -2,7 +2,6 @@
  * 
  */
 package com.wang.timer;
-
 /**
  * @author wanfangg
  */
@@ -18,10 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.wang.entity.AccessToken;
-import com.wang.service.BaseService;
 import com.wang.service.WeixinService;
-import com.wang.util.WeixinUtil;
 
 public class TimeStartServlet extends HttpServlet
 {

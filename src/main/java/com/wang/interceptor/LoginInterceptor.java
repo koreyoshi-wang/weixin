@@ -43,7 +43,7 @@ public class LoginInterceptor implements HandlerInterceptor{
         	return true;
         }
         System.out.println(url);
-        if(url.indexOf("login")>=0 || url.indexOf("weixin/weixin")>=0){  
+        if(url.indexOf("login")>=0 || url.indexOf("weixin/weixin")>=0 || url.indexOf("index")>=0){  
             return true;  
         }  
         //获取Session  

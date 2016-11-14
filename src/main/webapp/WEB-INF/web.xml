@@ -18,6 +18,7 @@
 			<param-value>true</param-value>
 		</init-param>
 	</filter>
+
 	<!--spring mvc 配置 -->
 	<servlet>
 		<servlet-name>springMVC</servlet-name>
@@ -34,14 +35,14 @@
 	</servlet-mapping>
 	<!-- 定时任务 -->
 	<servlet>
-        <servlet-name>TimeStartServlet</servlet-name>
-        <servlet-class>com.wang.timer.TimeStartServlet</servlet-class>
-        <load-on-startup>10</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>TimeStartServlet</servlet-name>
-        <url-pattern>/TimeStartServlet</url-pattern>
-    </servlet-mapping>
+		<servlet-name>TimeStartServlet</servlet-name>
+		<servlet-class>com.wang.timer.TimeStartServlet</servlet-class>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TimeStartServlet</servlet-name>
+		<url-pattern>/TimeStartServlet</url-pattern>
+	</servlet-mapping>
 
 	<!-- encodeing -->
 	<filter>
@@ -67,7 +68,6 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
-	<!--<welcome-file-list>
-		<welcome-file>/WEB-INF/jsp/login.jsp</welcome-file>
-	</welcome-file-list> -->
+	<!--<welcome-file-list> <welcome-file>/WEB-INF/jsp/login.jsp</welcome-file> 
+		</welcome-file-list> -->
 </web-app>

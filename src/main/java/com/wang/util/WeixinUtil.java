@@ -15,9 +15,15 @@ import java.util.Map;
 import java.io.BufferedReader;   
 import java.io.InputStreamReader;  
 import java.io.OutputStream;  
+import java.io.UnsupportedEncodingException;
 import java.net.ConnectException;  
 import java.net.URL;  
   
+
+
+
+
+
 
 
 
@@ -43,6 +49,11 @@ import javax.net.ssl.TrustManager;
 
 
 
+
+
+
+
+
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 
@@ -58,12 +69,15 @@ import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 import com.thoughtworks.xstream.io.xml.PrettyPrintWriter;
 import com.thoughtworks.xstream.io.xml.XppDriver;
 import com.wang.entity.AccessToken;
+import com.wang.entity.Article;
 import com.wang.entity.Button;
 import com.wang.entity.CommonButton;
 import com.wang.entity.ComplexButton;
 import com.wang.entity.Menu;
 import com.wang.entity.Message;
 import com.wang.entity.Reply;
+import com.wang.entity.ViewButton;
+import com.wang.entity.WeixinOauth2Token;
 /**
  * @author wanfangg
  */
@@ -98,6 +112,10 @@ public class WeixinUtil {
 	 */
 	public static String replyToXml(Reply reply){
 		String type = reply.getMsgType();
+		//Root 中的ID、createDate和updateDate不转换
+		xstream.omitField(Reply.class, "id");
+		xstream.omitField(Reply.class, "createDate");
+		xstream.omitField(Reply.class, "updateDate");
 		if(Reply.TEXT.equals(type)){
 			xstream.omitField(Reply.class, "articles");
 			xstream.omitField(Reply.class, "articles");
@@ -115,6 +133,7 @@ public class WeixinUtil {
 		}
 		xstream.autodetectAnnotations(true);  
 		xstream.alias("xml", reply.getClass());
+		xstream.alias("item", new Article().getClass());
 		return xstream.toXML(reply);
 	}
 	
@@ -239,11 +258,14 @@ public class WeixinUtil {
         btn32.setType("click");  
         btn32.setKey("32");  
   
-        CommonButton btn33 = new CommonButton();  
-        btn33.setName("幽默笑话");  
-        btn33.setType("click");  
-        btn33.setKey("33");  
+        ViewButton btn33 = new ViewButton();  
+        btn33.setName("view测试");  
+        btn33.setType("view");  
+        btn33.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4240e73ac7d153c7&redirect_uri="+urlEncodeUTF8("http://10dabd15.ngrok.io/weixin/login")+"&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect");  
   
+        byte[] buff=btn33.getUrl().getBytes();
+        int f=buff.length;
+        System.out.println(f);
         ComplexButton mainBtn1 = new ComplexButton();  
         mainBtn1.setName("生活助手");  
         mainBtn1.setSub_button(new CommonButton[] { btn11, btn12, btn13, btn14 });  
@@ -254,7 +276,7 @@ public class WeixinUtil {
   
         ComplexButton mainBtn3 = new ComplexButton();  
         mainBtn3.setName("更多体验");  
-        mainBtn3.setSub_button(new CommonButton[] { btn31, btn32, btn33 });  
+        mainBtn3.setSub_button(new Button[] { btn31, btn32, btn33 });  
   
         /** 
          *  
@@ -263,9 +285,61 @@ public class WeixinUtil {
          * menu.setButton(new Button[] { mainBtn1, mainBtn2, btn33 }); 
          */  
         Menu menu = new Menu();  
-        menu.setButton(new Button[] { mainBtn1, mainBtn2, mainBtn3 });  
+        //menu.setButton(new Button[] { mainBtn1, mainBtn2, mainBtn3 });
+        menu.setButton(new Button[] { btn33 }); 
   
         return menu;  
+    }
+    
+    /**
+     * 获取网页授权凭证
+     * 
+     * @param appId 公众账号的唯一标识
+     * @param appSecret 公众账号的密钥
+     * @param code
+     * @return WeixinAouth2Token
+     */
+    public static WeixinOauth2Token getOauth2AccessToken(String appId, String appSecret, String code) {
+        WeixinOauth2Token wat = null;
+        // 拼接请求地址
+        String requestUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code=CODE&grant_type=authorization_code";
+        requestUrl = requestUrl.replace("APPID", appId);
+        requestUrl = requestUrl.replace("SECRET", appSecret);
+        requestUrl = requestUrl.replace("CODE", code);
+        // 获取网页授权凭证
+        JSONObject jsonObject = httpRequest(requestUrl, "GET", null);
+        if (null != jsonObject) {
+            try {
+                wat = new WeixinOauth2Token();
+                wat.setAccessToken(jsonObject.getString("access_token"));
+                wat.setExpiresIn(jsonObject.getInteger("expires_in"));
+                wat.setRefreshToken(jsonObject.getString("refresh_token"));
+                wat.setOpenId(jsonObject.getString("openid"));
+                wat.setScope(jsonObject.getString("scope"));
+            } catch (Exception e) {
+                wat = null;
+                int errorCode = jsonObject.getInteger("errcode");
+                String errorMsg = jsonObject.getString("errmsg");
+                System.out.println("获取网页授权凭证失败 errcode:{} errmsg:{}"+errorCode+errorMsg);
+            }
+        }
+        return wat;
+    }
+    
+    /**
+     * URL编码（utf-8）
+     * 
+     * @param source
+     * @return
+     */
+    public static String urlEncodeUTF8(String source) {
+        String result = source;
+        try {
+            result = java.net.URLEncoder.encode(source, "utf-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 	
 	/** 

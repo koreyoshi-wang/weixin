@@ -14,13 +14,18 @@ import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 /**
  * @author wanfangg
  */
 @MappedSuperclass
 public class Root {
+	@XStreamOmitField
 	private String id;
+	@XStreamOmitField
 	private Date createDate = new Date();
+	@XStreamOmitField
 	private Date updateDate = new Date();
 	
 	/**

@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -38,9 +38,9 @@
 
 <body>
 	<div>
-		UserName:<input type="text" name="username" /> <br/>
-		PassWord:<input type="password" name="password" /><br/> 
-		<input type="submit" id="loginBtn" value="Login" />
+		UserName:<input type="text" name="username" /> <br /> PassWord:<input
+			type="password" name="password" /><br /> <input type="submit"
+			id="loginBtn" value="Login" />
 	</div>
 </body>
 </html>

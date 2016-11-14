@@ -105,7 +105,7 @@ public class Message extends Root implements Serializable{
 		this.msgId = msgId;
 	}
 	
-	@Column(name = "CONTENT")
+	@Column(name = "CONTENT", length = 1024)
 	public String getContent() {
 		return content;
 	}
