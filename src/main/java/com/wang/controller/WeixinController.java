@@ -168,7 +168,6 @@ public class WeixinController extends BaseController {
         temp.setUrl("http://weixin.qq.com");
         temp.setTouser(openId);
         temp.setTopcolor("#7b68ee");
-//        temp.setTemplate_id("ngqIpbwh8bUfcSsECmogfXcV14J0tQlEpBO27izEYtY");
         temp.setTemplate_id("xBGtuS5Ur2jjij3ydq5tb5i7abYXUcvqpIA_Q--R0SM");
         Map<String,TemplateData> m = new HashMap<String,TemplateData>();
         TemplateData first = new TemplateData();
